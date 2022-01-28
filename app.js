@@ -3,6 +3,15 @@ let computerScore = 0;
 let roundCount = 0;
 let playerSelection;
 let computerSelection;
+let body = document.querySelector("body");
+
+body.querySelector("button").addEventListener("click", function(){
+    game();
+});
+
+document.querySelector("button").addEventListener("onclick", function(){
+    console.log('made it');
+});
 
 function computerPlay() {
   let options = ["rock", "paper", "scissors"];
@@ -46,9 +55,11 @@ function game() {
   } else {
     playRound();
     roundCount++;
-    return `Round ${roundCount}`
+    console.log(`Round ${roundCount}`)
+    game();
   }
 }
+
 
 
 /* Ask for an input from the user; Based on his input, the game should compare that input to the one of the computer and then decide which message it should display and which score should it update */
