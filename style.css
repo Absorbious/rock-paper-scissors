@@ -35,9 +35,24 @@ button:hover{
     padding: 10px;
 }
 
+.commentary{
+    min-height: 100px;
+}
+
 .result {
     border: 2px grey solid;
     border-radius: 20px;
     margin-bottom: 20px;
     padding: 10px 30px;
+}
+
+@media screen and (max-width: 600px){
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    button{
+        margin-top: 10px;
+    }
 }
