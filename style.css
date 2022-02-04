@@ -27,6 +27,18 @@ button:hover{
     cursor: pointer;
 }
 
+.newGame{
+    background-color: rgba(255, 80, 80, 0.5);
+    color: white;
+    border: rgba(0,0,0,0) 1px solid;
+}
+
+.newGame:hover{
+    color: white;
+    background-color: rgba(255, 80, 80, 0.5);
+    border: grey 1px solid;
+}
+
 .buttons {
     padding: 50px;
 }
